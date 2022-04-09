@@ -26,7 +26,8 @@ Los comentarios tendrán un botón me gusta (like) y un botón no me gusta (disl
 
 Cada paso del titular se describe en un archivo específico, que quedan enlazados a continuación:
 
-- [Paso 1: Configurando el server](STEP1.md)
+- [Paso 1: Configurando el backend](STEP1.md)
+- [Paso 2: Creando la base de datos](STEP2.md)
 
 
 # Licencia y Uso

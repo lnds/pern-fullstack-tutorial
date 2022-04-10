@@ -9,6 +9,11 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
+
+// ROUTES
+app.use("/auth", require("./routes/auth"))
+
+
 app.listen(port, () => {
     console.log("servidor iniciado en puerto: " + port)
 })

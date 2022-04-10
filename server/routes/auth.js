@@ -5,7 +5,7 @@ const bcrypt = require("bcrypt")
 const jwGenerator = require("../services/jwtGenerator")
 
 // registrar usuario
-router.post("/", async (req, res) => {
+router.post("/register", async (req, res) => {
     try {
         // 1. destructurar req.body para obtner (name, email, password)
         const { name, email, password } = req.body

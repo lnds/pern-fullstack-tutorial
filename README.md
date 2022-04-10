@@ -32,6 +32,7 @@ Cada paso del titular se describe en un archivo específico, que quedan enlazado
 - [Paso 4: Conexión a la base de datos](STEP4.md)
 - [Paso 5: Creando el router de autorización](STEP5.md)
 - [Paso 6: Generando un token JWT](STEP6.md)
+- [Paso 7: El enrutador de acceso login](STEP7.md)
 
 
 # Licencia y Uso

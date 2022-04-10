@@ -72,7 +72,7 @@ const jwGenerator = require("../services/jwtGenerator")
 Ejecuta curl de este modo:
 
 ```
-$ curl -X POST -d '{"name": "Eduardo", "email": "email2@dominio.com", "password": "abc123" }' -H "Content-Type: application/json" http://localhost:3001/auth
+$ curl -X POST -d '{"name": "Eduardo", "email": "email2@dominio.com", "password": "abc123" }' -H "Content-Type: application/json" http://localhost:3001/auth/register
 
 {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiYjE0OGJkNWYtNmVmNi00MDYwLThhZjYtODIxNDBkMWQ5YjRiIiwiaWF0IjoxNjQ5NTU4NzUyLCJleHAiOjE2NDk1NjIzNTJ9.Zh63Ca0qPR9uYWwl7mlBWa3TejzJ8e18o0UFZB75DXY"}
 ```

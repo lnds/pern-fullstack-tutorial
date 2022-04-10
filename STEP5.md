@@ -13,7 +13,7 @@ const pool = require("../db")
 const bcrypt = require("bcrypt")
 
 // registrar usuario
-router.post("/", async (req, res) => {
+router.post("/register", async (req, res) => {
     try {
         // 1. destructurar req.body para obtner (name, email, password)
         const { name, email, password } = req.body
@@ -56,7 +56,7 @@ Ahora prueba que este router está funcionando. Puedes usar una herramienta como
 
 En mi caso usaré `curl`:
 
-    $ curl -X POST -d '{"name": "Eduardo", "email": "email@dominio.com", "password": "abc123" }' -H "Content-Type: application/json" http://localhost:3001/auth
+    $ curl -X POST -d '{"name": "Eduardo", "email": "email@dominio.com", "password": "abc123" }' -H "Content-Type: application/json" http://localhost:3001/auth/register
 
 Si todo sale bien podrás encontrar el archivo creado en la base de datos usando el comando:
 

@@ -4,7 +4,7 @@
 
 Si revisas el ejemplo que describimos en [Registro, Autenticación y Control de Acceso](AUTH.md) el JWT juega el rol de estos sellos que aplican los guardias a las personas que ingresan al club.
 
-Puedes aprender más sobre JWT acá: https://jwt.io
+Puedes aprender más sobre JWT acá: https://jwt.io.
 
 
-[^1] Tomado del sitio oficial de JWT
+[^1]: Tomado del sitio oficial de JWT

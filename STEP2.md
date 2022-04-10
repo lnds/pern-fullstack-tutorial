@@ -26,6 +26,7 @@ Ahora crearemos la tabla asociada a nuestros usuarios:
         password VARCHAR(255) NOT NULL
     );
 
+NOTA: estamos usando Postgresql 13 o superior.
 
 ## El archivo database.sql
 
@@ -34,5 +35,5 @@ Todas las sentencias sql para crear nuestra base de datos las dejaremos en el ar
 
 # A continuación 
 
-[Siguiente paso](STEP2.md)
-[Tabla de contenido](README.md#Pasos)
+- [Siguiente paso](STEP3.md)
+- [Tabla de contenido](README.md#Pasos)

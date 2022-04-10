@@ -28,6 +28,7 @@ Cada paso del titular se describe en un archivo específico, que quedan enlazado
 
 - [Paso 1: Configurando el backend](STEP1.md)
 - [Paso 2: Creando la base de datos](STEP2.md)
+- [Paso 3: Iniciando un servidor node](STEP3.md)
 
 
 # Licencia y Uso

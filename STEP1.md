@@ -32,7 +32,7 @@ En windows:
 
 Luego instalaremos los paquetes necesarios:
 
-    $ npm i express cors pg jsonwebtoken bcrypt
+    $ npm i express cors pg jsonwebtoken bcrypt dotenv
 
 Estos son los paquetes que necesitaremos
 
@@ -41,8 +41,9 @@ Estos son los paquetes que necesitaremos
 - pg: integración con postgresql
 - jsonwebtoken: para generar tokens JWT para darle seguridad al uso de nuestras APIs
 - bcrypt: que permite encriptar, en particular las passwords
+- dotenv: nos permite manejar configuración de ambiente usando archivos `.env`
 
 # A continuación 
 
-[Siguiente paso](STEP2.md)
-[Tabla de contenido](README.md#Pasos)
+- [Siguiente paso](STEP2.md)
+- [Tabla de contenido](README.md#Pasos)

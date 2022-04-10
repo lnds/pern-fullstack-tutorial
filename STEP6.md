@@ -1,5 +1,11 @@
 # Generando un token JWT
 
+En esta parte vamos a implementar el soporte de [JASON Web Token](https://jwt.io) (JWT) para poder implementar la autorización de acceso a nuestra API.
+
+En el archivo titulado [Registro, Autenticación y Control de Acceso](AUTH.md) puedes leer más por qué necesitamos esto.
+
+En [Qué es JWT](JWT.md) tienes una explicación sobre JWT.
+
 Vamos a modificar el archivo `config.js` de este modo:
 
 ```javascript
@@ -82,4 +88,4 @@ El resultado de token puede ser distinto al que ves acá, depende de los valores
 # A continuación 
 
 - [Siguiente paso](STEP7.md)
-- [Tabla de contenido](README.md#Pasos)
+- [Tabla de contenido](README.md#Primera-Parte)

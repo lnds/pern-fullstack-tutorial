@@ -80,4 +80,4 @@ Si pruebas estos endpoints con email incorrectos, o dejando en blanco algunos va
 # A continuación 
 
 - [Siguiente paso](STEP9.md)
-- [Tabla de contenido](README.md#Pasos)
+- [Tabla de contenido](README.md#Primera-Parte)

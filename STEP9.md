@@ -54,4 +54,4 @@ Usando curl ejecutamos estos comandos
 # A continuación 
 
 - [Siguiente paso](STEP10.md)
-- [Tabla de contenido](README.md#Pasos)
+- [Tabla de contenido](README.md#Primera-Parte)

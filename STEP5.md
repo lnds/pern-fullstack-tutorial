@@ -66,4 +66,4 @@ Si todo sale bien podrás encontrar el archivo creado en la base de datos usando
 # A continuación 
 
 - [Siguiente paso](STEP6.md)
-- [Tabla de contenido](README.md#Pasos)
+- [Tabla de contenido](README.md#Primera-Parte)

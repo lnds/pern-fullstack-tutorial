@@ -22,9 +22,11 @@ Cada usuario registrado podrá crear su propio blog. Además podrá revisar los 
 Los artículos tendrán un botón para apoyarlo mediante "aplausos". 
 Los comentarios tendrán un botón me gusta (like) y un botón no me gusta (dislike). Si un comentario tiene más "dislikes" que "likes" el comentario se bloquea y el autor del blog es el único que puede desbloquearlo.
 
-## Pasos
+## Primera Parte
 
-Cada paso del titular se describe en un archivo específico, que quedan enlazados a continuación:
+En la primera parte crearemos el soporte en backend para registrar y verificar usuarios.
+
+Cada paso del tutorial se describe en un archivo específico, que quedan enlazados a continuación:
 
 - [Paso 1: Configurando el backend](STEP1.md)
 - [Paso 2: Creando la base de datos](STEP2.md)
@@ -34,7 +36,8 @@ Cada paso del titular se describe en un archivo específico, que quedan enlazado
 - [Paso 6: Generando un token JWT](STEP6.md)
 - [Paso 7: El enrutador de acceso login](STEP7.md)
 - [Paso 8: El middleware de validación de datos](STEP8.md)
-- [Paso 9: Un middleware para validar si el usuario está verificado](STEP8.md)
+- [Paso 9: Un middleware para validar si el usuario está verificado](STEP9.md)
+- [Paso 10: Obteniendo el perfil del usuario verificado](STEP10.md)
 
 
 # Licencia y Uso

@@ -42,8 +42,6 @@ Usaremos `curl` para probar el servicio `login`:
     curl -X POST -d '{"email": "email2@dominio.com", "password": "abc123" }' -H "Content-Type: application/json" http://localhost:3001/auth/login
     {"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiMGNhMGUwMzctYTZhNi00ODEzLTgyMWEtOGI3M2NjOWJhNThlIiwiaWF0IjoxNjQ5NTYxMTk3LCJleHAiOjE2NDk1NjQ3OTd9.vGeD0MalZmsWhkifYPsriEGCu6jpJ2gDRt2uBeyO4bc"}
 
-
-
 # A continuación 
 
 - [Siguiente paso](STEP8.md)

@@ -2,7 +2,9 @@
 const router = require("express").Router()
 const pool = require("../db")
 const bcrypt = require("bcrypt")
+const validateUserInfo = require("../middleware/validateUserInfo")
 const jwGenerator = require("../services/jwtGenerator")
+
 
 // registrar usuario
 router.post("/register", async (req, res) => {
@@ -37,7 +39,7 @@ router.post("/register", async (req, res) => {
 })
 
 // verificar usuario
-router.post("/login", async (req, res) => {
+router.post("/login", validateUserInfo, async (req, res) => {
     try {
         // 1. destructurizar req.body
         const { email, password } = req.body

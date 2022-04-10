@@ -42,4 +42,4 @@ CONNECTION_URL=postgres://localhost:5432/blog_db
 # A continuación 
 
 - [Siguiente paso](STEP5.md)
-- [Tabla de contenido](README.md#Pasos)
+- [Tabla de contenido](README.md#Primera-Parte)

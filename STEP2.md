@@ -36,4 +36,4 @@ Todas las sentencias sql para crear nuestra base de datos las dejaremos en el ar
 # A continuación 
 
 - [Siguiente paso](STEP3.md)
-- [Tabla de contenido](README.md#Pasos)
+- [Tabla de contenido](README.md#Primera-Parte)

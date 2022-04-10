@@ -46,4 +46,4 @@ Estos son los paquetes que necesitaremos
 # A continuación 
 
 - [Siguiente paso](STEP2.md)
-- [Tabla de contenido](README.md#Pasos)
+- [Tabla de contenido](README.md#Primera-Parte)

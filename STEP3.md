@@ -62,4 +62,4 @@ Nota (*): 3001 es el valor de la variable `PORT` que configuraste en el archivo 
 # A continuación 
 
 - [Siguiente paso](STEP4.md)
-- [Tabla de contenido](README.md#Pasos)
+- [Tabla de contenido](README.md#Primera-Parte)

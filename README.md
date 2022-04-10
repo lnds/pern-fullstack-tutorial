@@ -33,6 +33,8 @@ Cada paso del titular se describe en un archivo específico, que quedan enlazado
 - [Paso 5: Creando el router de autorización](STEP5.md)
 - [Paso 6: Generando un token JWT](STEP6.md)
 - [Paso 7: El enrutador de acceso login](STEP7.md)
+- [Paso 8: El middleware de validación de datos](STEP8.md)
+- [Paso 9: Un middleware para validar si el usuario está verificado](STEP8.md)
 
 
 # Licencia y Uso

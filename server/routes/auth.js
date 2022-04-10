@@ -1,7 +1,8 @@
-// auth.js
+// routes/auth.js
 const router = require("express").Router()
 const pool = require("../db")
 const bcrypt = require("bcrypt")
+const jwGenerator = require("../services/jwtGenerator")
 
 // registrar usuario
 router.post("/", async (req, res) => {
@@ -23,12 +24,12 @@ router.post("/", async (req, res) => {
 
         // 4. agregar el usuario a la base de datos
         const newUser = await pool.query(
-            "INSERT INTO users(name, email, password) values($1, $2, $3)",
+            "INSERT INTO users(name, email, password) values($1, $2, $3) RETURNING *",
             [name, email, bcryptPassword])
 
-        res.json(newUser.rows[0])
-
         // 5. generar un token jwt
+        const token = jwGenerator(newUser.rows[0].id)
+        res.json({ token })
     } catch (err) {
         console.log(err)
         res.status(500).send("Server error")

@@ -7,7 +7,7 @@ Crea una carpeta `routes` dentro de la carpeta server:
 Dentro de esta carpeta abre y edita el archivo `auth.js` dejándolo de este modo:
 
 ```javascript
-// auth.js
+// routes/auth.js
 const router = require("express").Router()
 const pool = require("../db")
 const bcrypt = require("bcrypt")
@@ -32,7 +32,7 @@ router.post("/", async (req, res) => {
 
         // 4. agregar el usuario a la base de datos
         const newUser = await pool.query(
-            "INSERT INTO users(name, email, password) values($1, $2, $3)",
+            "INSERT INTO users(name, email, password) values($1, $2, $3) RETURNING *",
             [name, email, bcryptPassword])
 
         res.json(newUser.rows[0])
@@ -46,6 +46,9 @@ router.post("/", async (req, res) => {
 
 module.exports = router
 ```
+
+Cada uno de los pasos está comentado en el código.
+Fíjate que el paso 5 lo hemos dejado pendiente.
 
 ## Probando nuesto router
 

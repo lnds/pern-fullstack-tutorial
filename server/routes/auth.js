@@ -8,7 +8,7 @@ const jwGenerator = require("../services/jwtGenerator")
 
 
 // registrar usuario
-router.post("/register", async (req, res) => {
+router.post("/register", validateUserInfo, async (req, res) => {
     try {
         // 1. destructurar req.body para obtner (name, email, password)
         const { name, email, password } = req.body
@@ -76,4 +76,5 @@ router.get("/is-verify", authorization, async (req, res) => {
         res.status(500).send("Server error")
     }
 })
+
 module.exports = router

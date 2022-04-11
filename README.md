@@ -39,6 +39,11 @@ Cada paso del tutorial se describe en un archivo específico, que quedan enlazad
 - [Paso 9: Un middleware para validar si el usuario está verificado](STEP9.md)
 - [Paso 10: Obteniendo el perfil del usuario verificado](STEP10.md)
 
+## Segunda Parte
+
+En esta parte haremos un refactoring del backend.
+
+- [Paso 11: Tests unitarios y de integración](STEP11.md)
 
 # Licencia y Uso
 

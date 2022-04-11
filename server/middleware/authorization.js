@@ -22,7 +22,6 @@ module.exports = async (req, res, next) => {
         // 5. continua la ejecución del pipeline
         next()
     } catch (err) {
-        console.error(err.message)
         return res.status(403).json("Not authorized")
     }
 }

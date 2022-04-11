@@ -1,6 +1,5 @@
 // routes/__tests__/profile.test.js
 
-const config = require("../../config")
 const pool = require("../../services/db")
 const request = require('supertest')
 

@@ -1,6 +1,5 @@
 // routes/__tests__/is-verify.test.js
 
-const config = require("../../config")
 const pool = require("../../services/db")
 const request = require('supertest')
 

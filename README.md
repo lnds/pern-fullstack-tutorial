@@ -46,6 +46,8 @@ Cada paso del tutorial se describe en un archivo específico, que quedan enlazad
 En esta parte haremos un refactoring del backend.
 
 - [Paso 11: Tests unitarios y de integración](STEP11.md)
+- [Paso 12: Refactorizando nuestro código](STEP12.md)
+- [Paso 13: Tests unitarios para nuestros nuevos servicios](STEP13.md)
 
 # Licencia y Uso
 

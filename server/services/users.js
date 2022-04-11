@@ -5,11 +5,17 @@ const crypt = require("./crypt")
 
 const findUserById = async (userId) => {
     const result = await pool.query("SELECT * FROM users WHERE id = $1", [userId])
+    if (result.rows.length === 0) {
+        return null
+    }
     return newUserObject(result.rows[0])
 }
 
 const findProfileById = async (userId) => {
     const result = await pool.query("SELECT name FROM users WHERE id = $1", [userId])
+    if (result.rows.length === 0) {
+        return null
+    }
     return result.rows[0]
 }
 
@@ -22,6 +28,18 @@ const findUserByEmail = async (email) => {
 }
 
 const createUser = async (name, email, plainPassword) => {
+    const validateEmail = (userEmail) => {
+        return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(userEmail)
+    }
+
+    if (![email, name, plainPassword].every(Boolean)) {
+        return null
+    }
+
+    if (!validateEmail(email)) {
+        return null
+    }
+
     const password = await crypt.encrypt(plainPassword)
     const newUser = await pool.query(
         "INSERT INTO users(name, email, password) values($1, $2, $3) RETURNING *",

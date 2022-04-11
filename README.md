@@ -1,13 +1,15 @@
 # Tutorial PERN Stack Completo
 
-Este tutorial implementa una aplicación usando el stack PERN (Postgresql, Express, React and Node.js).
+Este tutorial implementa una aplicación usando el stack [PERN](PERN.md).
 
 ## Sobre este Tutorial
 
-Fue desarrollado en MacOs usando NIX. Las notas sobre el uso de NIX las puedes encontrar en el archivo NIX.md.
+Fue desarrollado en MacOs usando [NIX](NIX.md). 
+Las notas sobre el uso de NIX las puedes encontrar en el archivo [NIX.md](NIX.md).
 
-Si usas Linux: TBD
-Si usas Windows: TBD
+- Si usas MacOs sin NIX, entonces instala Node y Postgresql usando `brew`, las instrucciones están acá: [BREW.md](BREW.md)
+- Si usas Linux: TBD
+- Si usas Windows: TBD
 
 # Objetivos
 
@@ -52,7 +54,7 @@ Apreciaría si das los créditos.
 
 Este código está basado en diversas fuentes de información en internet, pero principalmente en estos tutoriales, publicados en el canal "The Stoic Programmers" en youtube:
 
-Parte 1: https://www.youtube.com/watch?v=7UQBMb8ZpuE&t=1008s
-Parte 2: https://www.youtube.com/watch?v=cjqfF5hyZFg&t=25s
+- Parte 1: https://www.youtube.com/watch?v=7UQBMb8ZpuE&t=1008s
+- Parte 2: https://www.youtube.com/watch?v=cjqfF5hyZFg&t=25s
 
 (c) 2022 Eduardo Díaz

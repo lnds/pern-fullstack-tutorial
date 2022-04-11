@@ -39,6 +39,10 @@ PORT=3001
 CONNECTION_URL=postgres://localhost:5432/blog_db
 ```
 
+## Qué hace este código
+
+El código de `db.js` es relativamente sencillo de entender. La clave está en la sexta linea cuando creamos el objeto `pool` usando el string de configuración, que corresponde al valor de la variable de entorno `CONNECTION_URL`.
+
 # A continuación 
 
 - [Siguiente paso](STEP5.md)

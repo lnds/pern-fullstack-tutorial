@@ -1,7 +1,7 @@
 // routes/__tests__/register.test.js
 
 const config = require("../../config")
-const pool = require("../../db")
+const pool = require("../../services/db")
 const request = require('supertest')
 
 const app = require("../../index")

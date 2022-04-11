@@ -1,7 +1,7 @@
 // routes/__tests__/profile.test.js
 
 const config = require("../../config")
-const pool = require("../../db")
+const pool = require("../../services/db")
 const request = require('supertest')
 
 const app = require("../../index")
@@ -45,7 +45,6 @@ describe('Verifica rutas: /profile', () => {
             .get('/profile')
             .set('token', loginRes.body.token)
             .set('Accept', '/json/')
-        console.log(res.body)
         expect(res.body.name).toBe('Usuario')
     })
 

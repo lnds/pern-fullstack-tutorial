@@ -3,13 +3,8 @@
 const config = require("../../config")
 const pool = require("../../db")
 const request = require('supertest')
-const cors = require("cors")
-const express = require("express")
 
-app = express()
-app.use(express.json())
-app.use(cors())
-app.use('/auth', require('../auth'))
+const app = require("../../index")
 
 jest.mock('../../config', () => {
     const originalModule = jest.requireActual('../../config')
@@ -37,9 +32,6 @@ describe('Verifica rutas: /auth/login', () => {
             .set('Content-Type', 'application/json')
             .set('Accept', /json/)
             .send({ name: 'Usuario', email: 'usuario@dominio.com', password: 'pass123' })
-
-
-
     })
 
     it('GET /is-verify', async () => {

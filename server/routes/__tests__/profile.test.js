@@ -3,14 +3,8 @@
 const config = require("../../config")
 const pool = require("../../db")
 const request = require('supertest')
-const cors = require("cors")
-const express = require("express")
 
-app = express()
-app.use(express.json())
-app.use(cors())
-app.use('/auth', require('../auth'))
-app.use('/profile', require('../profile'))
+const app = require("../../index")
 
 jest.mock('../../config', () => {
     const originalModule = jest.requireActual('../../config')

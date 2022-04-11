@@ -15,6 +15,10 @@ app.use("/auth", require("./routes/auth"))
 
 app.use("/profile", require("./routes/profile"))
 
-app.listen(port, () => {
-    console.log("servidor iniciado en puerto: " + port)
-})
+if (require.main === module) {
+    app.listen(port, () => {
+        console.log("servidor iniciado en puerto: " + port)
+    })
+} else {
+    module.exports = app
+}
